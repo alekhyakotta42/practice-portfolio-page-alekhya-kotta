@@ -1,85 +1,84 @@
 
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Portfolio Profile</title>
+    <!-- Links the external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- 1. Header Section: Name and Tagline -->
-    <header>
+    <!-- Top Navigation Bar (Side-by-side buttons, no bullets) -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#main-header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. Header Section -->
+    <header id="main-header">
         <h1>Alekhya Kotta</h1>
-        <p>Building Skills.Creating Possibilities.</p>
+        <p class="tagline">Building Skills.Creating Possibilities.</p>
     </header>
 
-    <!-- 2. "About Me" Section: Profile Picture and Paragraph -->
-    <section id="about">
-        <h2>About Me</h2>
-        
-        <img src="profile.jpg" alt="A photo of me" class="profile-img">
-        
-        <p>Hi,I'm Alekhya! I'm an aspiring web developer and passionate learner.
+    <!-- 2. Profile Picture (on right) & About Me Section -->
+    <section id="about" class="about-section">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi,I'm Alekhya! I'm an aspiring web developer and passionate learner.
             Through LaunchCode,I'm exploring web development,building projects,and growing my skills.
-            I'm excited to keep learning,creating and discovering new possibilities in technology.
-        </p>
+            I'm excited to keep learning,creating and discovering new possibilities in technology.</p>
+        </div>
+        <div class="profile-container">
+            <!-- Replace the src with your image URL or local image path -->
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
     </section>
 
-    <!-- 3. Skills Table Section: 2 Columns (Skill/Tool & Proficiency) -->
-    <section id="skills">
-        <h2>Skills & Tools</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Skill / Tool</th>
-                    <th>Proficiency</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>JavaScript</td>
-                    <td>Intermediate</td>
-                </tr>
-                <tr>
-                    <td>HTML & CSS</td>
-                    <td>Proficient</td>
-                </tr>
-                <tr>
-                    <td>Git & GitHub</td>
-                    <td>Intermediate</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- 3. Skills List Section with Proficiency Levels -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li><strong>HTML & CSS</Beginner> - <span class="proficiency">Beginner</span></li>
+            <li><strong>JavaScript Basics</strong> - <span class="proficiency">Intermediate</span></li>
+            <li><strong>Git & Version Control</strong> - <span class="proficiency">Intermediate</span></li>
+        </ul>
     </section>
 
-    <!-- 4. Contact Form Section: Name, Email, Textarea, and Submit Button -->
-    <section id="contact">
+    <!-- Contact Section with Form -->
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form action="#" method="POST">
-            <div>
+        <form class="contact-form">
+            <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
-            
-            <div>
+            <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
             </div>
-            
-            <div>
+            <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
             </div>
-            
-            <button type="submit">Send Message</button>
+            <button type="submit" class="submit-btn">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026. All rights reserved.</p>
+    <!-- 4. Footer Section -->
+    <footer id="main-footer-bottom">
+        <p>&copy; 2026 Alekhya Kotta. All rights reserved.</p>
+        <p><a href="https://github.com/" target="_blank">Visit my GitHub Profile</a></p>
     </footer>
 
 </body>
